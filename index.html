@@ -6,22 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/grid.css">
-    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 <body>
 
-    <header>
+    <header id="header">
     <img class="background" src="images/header-img.jpg" alt="">
     <div class="logo">
         <img class="logo_top" src="images/top-logo_w.png" alt="">
     </div>
 </header>
 
-    <section>
+    <section id="main">
         <input type="checkbox" hidden  name="" class="nav_input" id="menu_input"> 
         <div id="menu">
-            <nav>
+
+            <!-- <nav>
                 <img src="images/mainbar-menu_mu.png" alt="">
                 <ul>
                     <li><a href="">idea</a></li>
@@ -32,10 +33,51 @@
                     <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f" style="font-size: 20px; color:rgb(0, 0, 0); "></i></a></li>
                     <li class="ins"><a href="https://www.instagram.com/"  target="_blank"><i class="fab fa-instagram" style="font-size: 25px; color:rgb(0, 0, 0); "></i></a></li>
                 </ul>
-            </nav>
+            </nav> -->
+        
+            <div class="menu_in">
+                <div class="inline">
+                    <div class="logo_menu"><a class="logo_menu_link" href=""><img class="img_logo_menu " src="images/logo-menu_mu.png"></a></div>
+                    <div class="content_menu">
+                        <nav>
+                        <ul  class="item_menu_pc" style="list-style-type: none; text-decoration: none;">
+                            <div class="item_menu1">
+                            <li><a href="#idea"><img src="images/idea.png"></a></li>
+                            <li><a href="#about"><img src="images/about.png"></a></li>
+                            <li><a href=""><img src="images/quality.png"></a></li>
+                            <li><a href=""><img src="images/menu.png"></a></li>
+                            <li><a href=""><img src="images/store.png"></a></li>
+                            </div>
+                            <div class="icon_menu">
+                            <li><a href="https://www.facebook.com/thealleyvietnam/" target="_blank"><img class="icon_fb" src="http://www.the-alley.vn/images/mainbar-menu_fb.svg"></a></li>
+                            <li><a href="https://www.instagram.com/thealley.vietnam/" target="_blank"><img class="icon_ins" src="http://www.the-alley.vn/images/mainbar-menu_ig.svg"></a></li>
+                            </div>
+                        </ul>
+                        </nav>
+                    </div>  
+
+                </div>  
+                   <!-- menu - PC -->    
+                   
+                   <!-- menu mobile -->
+                    <div class="xoay">
+                    <label for="menu_input" class="navbar_mobile">
+                        <img src="images/3gach.svg" alt="" class="iconmenu">
+                        <img src="images/close.svg" alt="" class="close">
+                    </label>  
+                </div>
+            </div>
         </div>
+        
+        
    
-    <div id="a1">
+
+
+
+
+
+
+    <div class="a1">
         <div class="bg">
             <img class="tea1" src="images/info-img.png" alt="">
             <img class="ly" src="images/info-text.png" alt="">
