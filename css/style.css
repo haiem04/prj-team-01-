@@ -140,6 +140,59 @@ nav ul li a{
   
   }
 
+
+  .close{
+    display: block;
+    position: absolute;   
+    
+}
+.icon3gach{
+    display: block;
+}
+.nav_input:checked~.xoay{
+    animation:xoay 0.3s linear;
+}
+.nav_input:checked~.xoay >.navbar_mobile >.close{
+    opacity: 1;
+    transition: 0.5s;
+}
+.nav_input:checked ~.xoay >.navbar_mobile >.icon3gach{
+    opacity:0;
+    transition: 0.2s;
+}
+.nav_input:not(checked)~.xoay{
+    animation: nguoc 0.3s linear;
+}
+.nav_input:not(checked)~.xoay >.navbar_mobile >.close{
+    opacity: 0;
+    transition: 0.2s;
+}
+.nav_input:not(checked)~.xoay > .navbar_mobile >.icon3gach{
+    opacity: 1;
+    transition: 0.5s;
+}
+.xoay{
+    border: 1px solid transparent;   
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    float: right;
+}
+
+@keyframes xoay {
+    to {
+        transform:rotateZ(-180deg)
+    }
+}
+@keyframes nguoc {
+    to {
+        transform:rotateZ(180deg)
+    }
+}
+
+
+
   /* content1 */
 
 .a1{
@@ -157,6 +210,9 @@ nav ul li a{
 .tea1{
     margin-bottom: 3%;
 }
+
+
+
 .video{
     margin-top: 70px;
 }
@@ -225,4 +281,63 @@ color: #d5d5d5;
 .img_content_2{
     margin-top: -790px;
     margin-left: 150px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 840px)
+{
+    .inline{       
+        width: 100%;
+    }
+    .img_logo_menu{
+        position: absolute;     
+        padding: 0;
+    }
+    .menu_in{
+        width: 100%;        
+    }
+    .item_menu1{
+        display: none;
+    }
+    .icon3gach{
+        display: block;     
+        position: absolute;     
+        cursor: pointer;         
+    }     
+      
+    .navbar_mobile{   
+        opacity: 1;         
+    }
+    .icon_menu{        
+        
+        border-right: 1px solid black;     
+        padding: 0 22px 0 0;       
+        
+       
+        
+        list-style-type: none;
+       
+        
+    }
+    .icon_ins{
+        padding:0px;
+        width: 100%;
+        height: 45px;
+               
+    }
+    .icon_fb{
+        width: 100%;
+        height: 45px;
+    }   
+   .xoay{
+       display: block;
+       margin-top: 35px ;
+       margin-right: 20px;
+
+   }
+   
 }
