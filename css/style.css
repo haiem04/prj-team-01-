@@ -109,9 +109,6 @@ nav ul li a{
 .content_menu ul{
   display: flex;
 }
-.mobile{
-  display: none;
-  }
   .icon_menu{
       display: flex;
 
@@ -131,63 +128,59 @@ nav ul li a{
 /*css menu mobile */
 
   .navbar_mobile{
-      width: auto;
-      height: auto;
-      display: none;
-      padding-left: 25px;
-      padding-top: 7px;
-      padding-bottom: 7px;
-  
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
   }
-
-
   .close{
     display: block;
     position: absolute;   
-    
 }
-.icon3gach{
-    display: block;
-}
-.nav_input:checked~.xoay{
+/* khi tick */
+.nav_input:checked ~  #menu > .menu_in > .xoay{
     animation:xoay 0.3s linear;
 }
-.nav_input:checked~.xoay >.navbar_mobile >.close{
+.nav_input:checked~ #menu > .menu_in > .xoay >.navbar_mobile >.close{
     opacity: 1;
     transition: 0.5s;
 }
-.nav_input:checked ~.xoay >.navbar_mobile >.icon3gach{
+.nav_input:checked ~  #menu > .menu_in> .xoay  >.navbar_mobile >.iconmenu{
     opacity:0;
     transition: 0.2s;
 }
-.nav_input:not(checked)~.xoay{
+/* khi khong tick */
+.nav_input:not(checked)~  #menu > .menu_in> .xoay{
     animation: nguoc 0.3s linear;
 }
-.nav_input:not(checked)~.xoay >.navbar_mobile >.close{
+.nav_input:not(checked)~  #menu > .menu_in> .xoay >.navbar_mobile >.close{
     opacity: 0;
     transition: 0.2s;
 }
-.nav_input:not(checked)~.xoay > .navbar_mobile >.icon3gach{
+.nav_input:not(checked)~  #menu > .menu_in> .xoay > .navbar_mobile >.iconmenu{
     opacity: 1;
     transition: 0.5s;
 }
 .xoay{
+    box-sizing:content-box ;
     border: 1px solid transparent;   
+    border-radius: 50%;
     cursor: pointer;
-    height: 30px;
-    width: 30px;
+    height: 50px;
+    width: 50px;
     text-align: center;
     float: right;
+    display: none;
+
 }
 
 @keyframes xoay {
     to {
-        transform:rotateZ(-180deg)
+        transform:rotate(-180deg)
     }
 }
 @keyframes nguoc {
     to {
-        transform:rotateZ(180deg)
+        transform:rotate(180deg)
     }
 }
 
@@ -298,30 +291,24 @@ color: #d5d5d5;
         padding: 0;
     }
     .menu_in{
-        width: 100%;        
+        width: 100%;  
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     .item_menu1{
         display: none;
     }
-    .icon3gach{
+    .iconmenu{
         display: block;     
         position: absolute;     
         cursor: pointer;         
     }     
       
-    .navbar_mobile{   
-        opacity: 1;         
-    }
     .icon_menu{        
-        
         border-right: 1px solid black;     
         padding: 0 22px 0 0;       
-        
-       
-        
         list-style-type: none;
-       
-        
     }
     .icon_ins{
         padding:0px;
@@ -334,10 +321,13 @@ color: #d5d5d5;
         height: 45px;
     }   
    .xoay{
-       display: block;
-       margin-top: 35px ;
-       margin-right: 20px;
-
+    margin-left: 25px;
+    margin-right: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
    }
 
 /* content2 */
