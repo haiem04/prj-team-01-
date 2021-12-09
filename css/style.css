@@ -169,6 +169,7 @@ html{
 }
 #menu_input:checked ~ .nav_mobile1{
   transform: translateY(58%);
+  
 }
 
 
