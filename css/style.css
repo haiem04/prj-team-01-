@@ -38,7 +38,7 @@ html{
 
 /*css pc*/
 #menu{
-    position: sticky ; 
+    position: fixed; 
     /* thay bang js + fixed */
     z-index: 10000;
     top: 0;
@@ -145,6 +145,30 @@ html{
     to {
         transform:rotate(180deg)
     }
+}
+
+
+.nav_mobile1{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: #e7e7e7; 
+  text-align: center;
+  padding: 20px 0;
+  transition: 0.8s ease;
+}
+.link{
+  color: black;
+  font-size: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+#menu_input:not(checked) ~ .nav_mobile1{
+  transform: translateY(-100%);
+}
+#menu_input:checked ~ .nav_mobile1{
+  transform: translateY(58%);
 }
 
 
