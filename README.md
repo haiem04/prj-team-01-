@@ -12,4 +12,8 @@ hải sửa 3 gạch xoay
 
 hải thêm content 3 + css + reponsive mobile
 
+<<<<<<< HEAD
 hải sửa html
+=======
+hello 
+>>>>>>> eb1e3ae13c8af5206f1ccb249e8ee0a18bd24055
