@@ -13,35 +13,6 @@ html{
     width: 100%;
 }
 
-
-/* nav{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    margin-left: 11%;
-    margin-right: 14%;
-} */
-
-
-/* nav ul{
-    display: flex;
-    justify-content: space-between;
-}
-nav ul li{
-    margin: 10px;
-}
-nav ul li a{
-    font-size: 16px;
-    text-transform: uppercase;
-    font-family: Helvetica, Arial, sans-serif;
-    display: block;
-    display: inline-block;
-    color: rgba(0, 0, 0, 0.795);
-    padding-left: 20px;
-    font-weight: bold;
-} */
-
 /* header*/
 .logo{
     position: absolute;
@@ -60,12 +31,6 @@ nav ul li a{
     margin-right: auto;
 }
 
-/* section{
-    position: absolute;
-    width: 100%;
-    margin-top: 600px;
-  
-} */
 #main{
     position: relative;
     z-index: 1;
@@ -75,7 +40,6 @@ nav ul li a{
 
 /*css pc*/
 #menu{
-    /* sticky chỉ hỗ trợ một số trình duyệt nên dùng js + fixed để thay thế  */
     position: sticky ; 
     z-index: 10000;
     top: 0;
@@ -275,8 +239,10 @@ color: #d5d5d5;
 
 
   /* conent 3 */
-  .content_3{
-    position: absolute;
+  #quality{
+    background-image: url(../images/index_bg.jpg);
+    width: 100%;
+    position: relative;
     height: auto;
     overflow: hidden;
   }
@@ -323,6 +289,7 @@ color: #d5d5d5;
     margin-left: 50px;
   }
   .quality3{
+  
     margin-top: 50px;
     margin-left: -200px;
   }
@@ -342,6 +309,7 @@ color: #d5d5d5;
     font-size: 20px;
   }
   .text-box2{
+    
     margin-bottom: 145px ;
   }
   .text-box3{
@@ -350,16 +318,18 @@ color: #d5d5d5;
     top:0;
   }
 
+/* ----------------------------------------------Mobile ------------------------------------------------------*/
 
-
-@media screen and (max-width: 46.25em)
+@media screen and (max-width: 739px)
 {
     .inline{       
         width: 100%;
+        display: flex;
+        align-items: center;
     }
     .img_logo_menu{
-        position: absolute;     
         padding: 0;
+        margin-left: 25px;
     }
     .menu_in{
         width: 100%;  
@@ -465,13 +435,13 @@ color: #d5d5d5;
     margin: 0;
   }
   .border_box1{
-    margin-top: 20%;
+    margin-top: 175px;
   }
   .border_box1 > p{
     width: 120px;
   }
   .border_box2{
-    margin-top: 25%;
+    margin-top: 160px;
   }
   .border_box3{
     margin-top: 30%;
@@ -510,4 +480,52 @@ color: #d5d5d5;
 
 
    
+}
+
+/* ----------------------------------------------Tablet ------------------------------------------------------*/
+
+@media screen and ( min-width:740px ) and ( max-width: 1023px ) {
+  
+
+/* content 1 */
+
+/* content 2 */
+.content_2{
+  padding-bottom: 0;
+}
+.border_content_2{
+  text-align: center;
+}
+.bottom_content_2{
+  width: 100%;
+  display: flex;
+
+}
+.text3_content_2{
+  width: 100%;
+  padding: 0;
+  margin: 40px 0 0 0 ;
+  font-size: 18px;
+}
+.img_content_2{
+  margin: 70px 0 15px 15px ;
+  overflow: hidden;
+  display:flex;
+  justify-content: center;
+  width: auto;
+}
+.pic_content_2{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* content 3 */
+#quality{
+position: absolute;
+margin-top: -200px;
+z-index: 2;
+}
+
+
 }
