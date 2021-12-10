@@ -354,7 +354,7 @@ color: #d5d5d5;
   /* footer */
   #global{
   height: 320px;
-  background: url(../images/page-bg_02.jpg)top center no-repeat, #000;
+  background: url(../images/page-bg_02.jpg)top center no-repeat, #000; 
   background-size: 80%;
   position: relative;
   width: 100%;
@@ -364,7 +364,7 @@ color: #d5d5d5;
   text-decoration: none;
   }
   .gl{
-    font-family: 'Cinzel Decorative', 'cursive';
+    font-family: 'Cinzel Decorative', cursive;
     font-weight: 700;
     font-size: 30px;
     color: #fff;
