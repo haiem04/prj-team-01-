@@ -38,7 +38,7 @@ html{
 
 /*css pc*/
 #menu{
-    position: fixed; 
+    position: relative; 
     /* thay bang js + fixed */
     z-index: 10000;
     top: 0;
@@ -47,8 +47,13 @@ html{
     background-color: #fff;
     width: 100%;
     box-shadow: 0px 0px 3px 3px #0000001a;
-
 } 
+.sticky{
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+}
+
 .inline{
     position: relative;
     width: 80%;
@@ -349,6 +354,9 @@ color: #d5d5d5;
 
 @media screen and (max-width: 739px)
 {
+  #menu{
+    position: fixed;
+  }
     .inline{       
         width: 100%;
         display: flex;
