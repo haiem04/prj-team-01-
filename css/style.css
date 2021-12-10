@@ -169,7 +169,6 @@ html{
 }
 #menu_input:checked ~ .nav_mobile1{
   transform: translateY(58%);
-  
 }
 
 
@@ -344,6 +343,43 @@ color: #d5d5d5;
     margin-bottom: 450px;
     top:0;
   }
+
+  /* footer */
+  #global{
+  height: 320px;
+  background: url(../images/page-bg_02.jpg)top center no-repeat, #000;
+  background-size: 80%;
+  position: relative;
+  width: 100%;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  padding: 80px 0;
+  text-decoration: none;
+  }
+  .gl{
+    font-family: 'Cinzel Decorative', 'cursive';
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+  }
+
+  #footer {
+    background-color: #333;
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #FFF;
+    font-size: 12px;
+    padding-left: 50px;
+    font-family: 'Poppins';
+  }
+  .ft>p>a{
+    color: #FFF;
+    text-decoration: none;
+  }
+
 
 /* ----------------------------------------------Mobile ------------------------------------------------------*/
 
