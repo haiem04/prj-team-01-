@@ -4,15 +4,13 @@ document.addEventListener('DOMContentLoaded' , function(){
     var navbar = nav.offsetTop;
     window.onscroll = function() {
          var window_pos = document.documentElement.scrollTop;
-         if (window_pos >= navbar){
-             console.log('test');
+         if (window_pos >=navbar){
+             console.log('test1');
              nav.classList.add("sticky"); 
-            main.style.paddingTop = "110px"
          }
          else{
-            console.log('test');
+            console.log('test3');
              nav.classList.remove("sticky");
-             main.style.paddingTop = "0px"
          }
     }
 })
