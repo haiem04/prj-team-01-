@@ -30,6 +30,7 @@ html{
     object-fit: cover;
 }
 #main{
+  padding-top: 75px;
     position: relative;
     z-index: 1;
     width: 100%;
@@ -38,17 +39,21 @@ html{
 
 /*css pc*/
 #menu{
-    position: fixed; 
+    position: absolute; 
     /* thay bang js + fixed */
     z-index: 10000;
-    top: 0;
     left: 0;
     right: 0;
     background-color: #fff;
     width: 100%;
     box-shadow: 0px 0px 3px 3px #0000001a;
-
 } 
+.sticky{
+  position: fixed !important ;
+  top: 0;
+  width: 100%;
+}
+
 .inline{
     position: relative;
     width: 80%;
@@ -101,27 +106,27 @@ html{
 }
 /* khi tick */
 .nav_input:checked ~  #menu > .menu_in > .xoay{
-    animation:xoay 0.3s linear;
+    animation:xoay 0.35s linear;
 }
 .nav_input:checked~ #menu > .menu_in > .xoay >.navbar_mobile >.close{
     opacity: 1;
-    transition: 0.5s;
+    transition: 0.6s;
 }
 .nav_input:checked ~  #menu > .menu_in> .xoay  >.navbar_mobile >.iconmenu{
     opacity:0;
-    transition: 0.2s;
+    transition: 0.35s;
 }
 /* khi khong tick */
 .nav_input:not(checked)~  #menu > .menu_in> .xoay{
-    animation: nguoc 0.3s linear;
+    animation: nguoc 0.35s linear;
 }
 .nav_input:not(checked)~  #menu > .menu_in> .xoay >.navbar_mobile >.close{
     opacity: 0;
-    transition: 0.2s;
+    transition: 0.35s;
 }
 .nav_input:not(checked)~  #menu > .menu_in> .xoay > .navbar_mobile >.iconmenu{
     opacity: 1;
-    transition: 0.5s;
+    transition: 0.6s;
 }
 .xoay{
     box-sizing:content-box ;
@@ -149,7 +154,9 @@ html{
 
 
 .nav_mobile1{
-  position: absolute;
+  display: none;
+  position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   right: 0;
@@ -157,7 +164,7 @@ html{
   background: #e7e7e7; 
   text-align: center;
   padding: 20px 0;
-  transition: 0.8s ease;
+  transition: 0.5s ease;
 }
 .link{
   color: black;
@@ -383,8 +390,20 @@ color: #d5d5d5;
 
 /* ----------------------------------------------Mobile ------------------------------------------------------*/
 
+
 @media screen and (max-width: 739px)
 {
+  .logo{
+    padding-top: 100px;
+  }
+  #menu{
+    display: block;
+    position: fixed  ;
+    top:0;
+    left:0;
+    right: 0;
+    z-index: 10000000;
+  }
     .inline{       
         width: 100%;
         display: flex;
@@ -433,7 +452,9 @@ color: #d5d5d5;
     align-items: center;
     cursor: pointer;
    }
-
+   .nav_mobile1{
+     display: block;
+   }
 /* content2 */
 #about{
     width: 90%;
@@ -462,6 +483,7 @@ color: #d5d5d5;
     position: relative;
   }
   .text3_content_2{
+    font-size: 16px;
     padding-right: 0;
     width: 100%;
     margin: 15px 0 0 0 ;
