@@ -357,12 +357,18 @@ color: #d5d5d5;
 
 @media screen and (max-width: 739px)
 {
+
   .logo{
     padding-top: 100px;
+    text-align: center;
+  }
+  .logo_top{
+    width: 90%;
   }
   #menu{
     display: block;
     position: fixed  ;
+    width: 100%;
     top:0;
     left:0;
     right: 0;
@@ -427,6 +433,7 @@ color: #d5d5d5;
   }
   .content_2{
     padding-bottom: 0;
+    width: 100%;
   }
   .text1_content_2{
     width: auto;
@@ -454,6 +461,9 @@ color: #d5d5d5;
   }
   
 /* content 3 */
+#quality{
+  width: 100%;
+}
 .content3{
     z-index: 2;
     width: 100%;
