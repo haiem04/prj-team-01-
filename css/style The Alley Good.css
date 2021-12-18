@@ -303,8 +303,46 @@ video{
     background-color: black;
 }
 
-
-
+/* content 3  */
+#content3{
+    background-color: #fff;
+    /* position: relative; */
+    height: 100%;
+}
+.MAG{
+    padding-top: 70px;
+    max-width: 1250px !important;
+    padding-bottom: 70px;
+}
+.title--mag{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.box--mag{
+    height: 100%;
+}
+.box--mag > a >img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    height: 420px;
+}
+.date_text-box{
+    margin: 5px 0 20px 0;
+    font-size: 14px;
+}
+.title_text-box  {
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+.title_text-box  > a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+.text-box--mag{
+    text-align: justify;
+}
 
 
 

@@ -13,7 +13,6 @@
         var menuTop = menu.offsetTop;
         window.onscroll = function(){
             var windowScroll = document.documentElement.scrollTop;
-            
             if( windowScroll > menuTop ){
                 menu.style.backgroundColor = '#fff';
                 for (let i = 0; i < linkMenu.length; i++) {
@@ -42,6 +41,22 @@
                 }
                 numberShopping.classList.remove('textColor--menu')
             }
+
+            //======================MAG       
+            var Mag = document.querySelector('.MAG')
+            var MagOfSet = Mag.offsetTop;
+            // MagOfSet = Number(MagOfSet);
+            // windowGet = Number(windowGet);
+            let calculate = MagOfSet - windowScroll;
+            console.log('scroll', windowScroll)
+            console.log('calculate' , calculate);
+            if ( calculate < 535 ) {
+                console.log('hello')
+            }
+//ảnh scale chữ trượt mờ 
+
+
+
         }
 
 
@@ -152,8 +167,8 @@
                     console.log(slideNumber)
                 })
               
-        
-        
+ 
+
           
 
     })
