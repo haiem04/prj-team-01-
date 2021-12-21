@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      />
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/style The Alley Good.css">
     <script src="./java script/JS The Alley Good.js"></script>
@@ -16,14 +21,17 @@
 <body>
     <div id="menu">
         <div class=" grid wide inline">
+            <div class="navbar--mobile">
+                <i class="fas fa-bars"></i>
+            </div>
             <div class="content_1--menu">
                 <span><a class="link--menu" href="">Home</a></span>
                 <span><a  class="link--menu"href="">MAG.</a></span>
                 <span><a class="link--menu" href="">Collections.</a></span>
             </div>
             <div class="content_2--menu">
-                <a href=""><img class="logo_white--menu" src="//cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_7_17e9fc41-970c-4ef6-b2ca-609e3b9ee5db_150x.png?v=1620200266" data-sizes="auto" data-aspectratio="1.8195902048975512" style="max-width: 3641px; max-height: 2001px; width: 160px" itemprop="logo" alt="THE ALLEY GOODS" data-srcset="//cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_7_17e9fc41-970c-4ef6-b2ca-609e3b9ee5db_150x.png?v=1620200266 150w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_7_17e9fc41-970c-4ef6-b2ca-609e3b9ee5db_300x.png?v=1620200266 300w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_7_17e9fc41-970c-4ef6-b2ca-609e3b9ee5db_600x.png?v=1620200266 600w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_7_17e9fc41-970c-4ef6-b2ca-609e3b9ee5db_900x.png?v=1620200266 900w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_7_17e9fc41-970c-4ef6-b2ca-609e3b9ee5db_1200x.png?v=1620200266 1200w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_7_17e9fc41-970c-4ef6-b2ca-609e3b9ee5db_1500x.png?v=1620200266 1500w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_7_17e9fc41-970c-4ef6-b2ca-609e3b9ee5db_1800x.png?v=1620200266 1800w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_7_17e9fc41-970c-4ef6-b2ca-609e3b9ee5db_2100x.png?v=1620200266 2100w" sizes="160px" srcset="//cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_7_17e9fc41-970c-4ef6-b2ca-609e3b9ee5db_150x.png?v=1620200266 150w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_7_17e9fc41-970c-4ef6-b2ca-609e3b9ee5db_300x.png?v=1620200266 300w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_7_17e9fc41-970c-4ef6-b2ca-609e3b9ee5db_600x.png?v=1620200266 600w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_7_17e9fc41-970c-4ef6-b2ca-609e3b9ee5db_900x.png?v=1620200266 900w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_7_17e9fc41-970c-4ef6-b2ca-609e3b9ee5db_1200x.png?v=1620200266 1200w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_7_17e9fc41-970c-4ef6-b2ca-609e3b9ee5db_1500x.png?v=1620200266 1500w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_7_17e9fc41-970c-4ef6-b2ca-609e3b9ee5db_1800x.png?v=1620200266 1800w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_7_17e9fc41-970c-4ef6-b2ca-609e3b9ee5db_2100x.png?v=1620200266 2100w"></a>
-                <a href=""><img class="logo_black--menu" src="//cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_6_84cc5c06-ea4b-466b-a6e6-4bdd1217ede2_150x.png?v=1620200244" data-sizes="auto" data-aspectratio="1.8230884557721139" style="max-width: 3648px; max-height: 2001px; width: 160px" itemprop="logo" alt="THE ALLEY GOODS" data-srcset="//cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_6_84cc5c06-ea4b-466b-a6e6-4bdd1217ede2_150x.png?v=1620200244 150w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_6_84cc5c06-ea4b-466b-a6e6-4bdd1217ede2_300x.png?v=1620200244 300w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_6_84cc5c06-ea4b-466b-a6e6-4bdd1217ede2_600x.png?v=1620200244 600w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_6_84cc5c06-ea4b-466b-a6e6-4bdd1217ede2_900x.png?v=1620200244 900w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_6_84cc5c06-ea4b-466b-a6e6-4bdd1217ede2_1200x.png?v=1620200244 1200w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_6_84cc5c06-ea4b-466b-a6e6-4bdd1217ede2_1500x.png?v=1620200244 1500w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_6_84cc5c06-ea4b-466b-a6e6-4bdd1217ede2_1800x.png?v=1620200244 1800w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_6_84cc5c06-ea4b-466b-a6e6-4bdd1217ede2_2100x.png?v=1620200244 2100w" sizes="160px" srcset="//cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_6_84cc5c06-ea4b-466b-a6e6-4bdd1217ede2_150x.png?v=1620200244 150w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_6_84cc5c06-ea4b-466b-a6e6-4bdd1217ede2_300x.png?v=1620200244 300w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_6_84cc5c06-ea4b-466b-a6e6-4bdd1217ede2_600x.png?v=1620200244 600w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_6_84cc5c06-ea4b-466b-a6e6-4bdd1217ede2_900x.png?v=1620200244 900w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_6_84cc5c06-ea4b-466b-a6e6-4bdd1217ede2_1200x.png?v=1620200244 1200w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_6_84cc5c06-ea4b-466b-a6e6-4bdd1217ede2_1500x.png?v=1620200244 1500w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_6_84cc5c06-ea4b-466b-a6e6-4bdd1217ede2_1800x.png?v=1620200244 1800w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/LOGO__1_6_84cc5c06-ea4b-466b-a6e6-4bdd1217ede2_2100x.png?v=1620200244 2100w"></a>
+                <a href=""><img class="logo_white--menu" src="./images/LOGO_whitex.png"></a>
+                <a href=""><img class="logo_black--menu" src="./images/LOGO__black.png"></a>
             </div>
             <div class="content_3--menu">
                 <ul>
@@ -53,31 +61,127 @@
                     </div>
                 </li>
                 <ul>
-                <li><i class="fas fa-search"></i></li>
-                <li><i class="fas fa-user"></i></li>
-                <li><i class="fas fa-shopping-cart"></i> <span id="number-shopping">0</span></li>
+                <li><i class="fas fa-search" id="search--menu"></i></li>
+                <li><i class="fas fa-user" id="user--menu"></i></li>
+                <li><i class="fas fa-shopping-cart" id="shopping--menu"></i> <span id="number-shopping">0</span></li>
                 </ul>
             </ul>
             </div>
         </div>
     </div>
+    
+<!-- ========Menu Mobile -->
+    <div class="menu--mobile">
+        <div class="content_menu--mobile">
+            <div class="header_menu--mobile">
+            <div class="logo--mobile">
+                <img src="./images/LOGO__black.png" alt="">
+            </div>
+            <div class="btn--close">
+                <img class="img_btn--close" 
+                src="./images/close-menumobile.png" alt="">
+            </div>
+            </div>
+
+            <div class="main_menu--mobile">
+                <a  class="link_menu--mobile"  href="">Home</a>
+                <a  class="link_menu--mobile"  href="">MAG.</a>
+                <a  class="link_menu--mobile"  href="">Collections.</a>
+                <span class="language_menu--mobile"   href="#">Language</span>
+                <div class="box_language--mobile" data-show--mobile="">
+                <a class="link-language--mobile" href="">English</a>
+                <a class="link-language--mobile" href="">繁體中文</a>
+                </div>
+                <span  class="money_menu--mobile"  href="#">Currency</span>
+                <div class="box_money--mobile" data-show--mobile="">
+                    <a class="link-money--mobile" href="">EUR € </a>
+                    <a class="link-money--mobile" href="">JPY ¥</a>
+                    <a class="link-money--mobile" href="">USD $</a>
+                    </div>
+                <h3>ACCOUNT</h3>
+                <a class="link--bottom1" href="">Log in</a>
+                <a class="link--bottom2" href="">Create account</a>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+
+<!-- ===============Search -->
+<div class="search--mobile">
+    <div class="content-search">
+    <div class="header-search">
+        <img class="btnclose--search" src="./images/close-menumobile.png" alt="">
+    </div>
+    <div class="search-input">
+        <span><i class="fas fa-search" id="icon-search--mobile"></i> </span>
+        <input class="search-input--fill" type="text"
+         placeholder="Search The Alley Goods" autocomplete="off" 
+         spellcheck="false">
+    </div>
+</div>
+</div>
+    <div class="overlay-1"></div>
+
+<!-- =========================Shopping -->
+<div class="shopping--mobile">
+    <div class="content-shop">
+        <div class="header-shop">
+            <div style="width: 80px;"></div>
+        <div class="check--shop"><p>Your shopping cart is empty</p></div>
+        <div  style="width: 80px; text-align: right;">
+            <img class="btnclose--shop"
+             src="./images/close-menumobile.png" alt=""></div>
+    </div>
+</div>
+</div>
+    <div class="overlay-1"></div>
+
+<!-- =================================Login -->
+
+<div class="login--mobile">
+    <div class="content-login">
+        <div class="header-login">
+            <div class="title--login">
+                <h1>Login</h1>
+            </div>
+        <div  style="width: 80px; text-align: right;">
+            <img class="btnclose--login"
+             src="./images/close-menumobile.png" alt="">
+        </div>
+    </div>
+
+    <div class="main-login--mobile">
+        <form action="#">
+            <input class="input-fill--login"  type="email" placeholder="Email"
+            autocomplete="off" spellcheck="false">
+            <input class="input-fill--login"  type="password" placeholder="Password"
+            autocomplete="off" spellcheck="false">
+            <input class="input--signin" type="submit" value="Sign in">
+            <a class="option--login" href="#">Create account</a>
+            <a class="option--login" href="#">Forgot password</a> 
+
+        </form>
+    </div>
+</div>
+</div>
+
 
     <div id="content1">
         <div class="slider">
             <div class="slide active">
-                <img class="img-slide1" src="//cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_02_Bankstown_150x.jpg?v=1616572084" data-sizes="auto" data-aspectratio="1.5009140767824498" style="" alt="THE ALLEY GOODS" data-srcset="//cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_02_Bankstown_150x.jpg?v=1616572084 150w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_02_Bankstown_300x.jpg?v=1616572084 300w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_02_Bankstown_600x.jpg?v=1616572084 600w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_02_Bankstown_900x.jpg?v=1616572084 900w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_02_Bankstown_1200x.jpg?v=1616572084 1200w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_02_Bankstown_1500x.jpg?v=1616572084 1500w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_02_Bankstown_1800x.jpg?v=1616572084 1800w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_02_Bankstown_2100x.jpg?v=1616572084 2100w" sizes="1310px" srcset="//cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_02_Bankstown_150x.jpg?v=1616572084 150w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_02_Bankstown_300x.jpg?v=1616572084 300w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_02_Bankstown_600x.jpg?v=1616572084 600w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_02_Bankstown_900x.jpg?v=1616572084 900w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_02_Bankstown_1200x.jpg?v=1616572084 1200w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_02_Bankstown_1500x.jpg?v=1616572084 1500w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_02_Bankstown_1800x.jpg?v=1616572084 1800w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_02_Bankstown_2100x.jpg?v=1616572084 2100w">
+                <img class="img-slide1" src="./images/shop.jpg">
                 <div class="text-slide text-slide-first">
                     <span>It's time for tea!</span>
                 </div>
             </div>
             <div class="slide">
-                <img class="img-slide2" src="//cdn.shopify.com/s/files/1/0446/9371/7158/files/IMG_5104_-_fix_0dc7330e-0c9e-4422-b655-a1429fbde618_150x.jpg?v=1616579742" data-sizes="auto" data-aspectratio="1.5" style="" alt="THE ALLEY GOODS" data-srcset="//cdn.shopify.com/s/files/1/0446/9371/7158/files/IMG_5104_-_fix_0dc7330e-0c9e-4422-b655-a1429fbde618_150x.jpg?v=1616579742 150w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/IMG_5104_-_fix_0dc7330e-0c9e-4422-b655-a1429fbde618_300x.jpg?v=1616579742 300w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/IMG_5104_-_fix_0dc7330e-0c9e-4422-b655-a1429fbde618_600x.jpg?v=1616579742 600w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/IMG_5104_-_fix_0dc7330e-0c9e-4422-b655-a1429fbde618_900x.jpg?v=1616579742 900w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/IMG_5104_-_fix_0dc7330e-0c9e-4422-b655-a1429fbde618_1200x.jpg?v=1616579742 1200w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/IMG_5104_-_fix_0dc7330e-0c9e-4422-b655-a1429fbde618_1500x.jpg?v=1616579742 1500w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/IMG_5104_-_fix_0dc7330e-0c9e-4422-b655-a1429fbde618_1800x.jpg?v=1616579742 1800w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/IMG_5104_-_fix_0dc7330e-0c9e-4422-b655-a1429fbde618_2100x.jpg?v=1616579742 2100w" sizes="1310px" srcset="//cdn.shopify.com/s/files/1/0446/9371/7158/files/IMG_5104_-_fix_0dc7330e-0c9e-4422-b655-a1429fbde618_150x.jpg?v=1616579742 150w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/IMG_5104_-_fix_0dc7330e-0c9e-4422-b655-a1429fbde618_300x.jpg?v=1616579742 300w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/IMG_5104_-_fix_0dc7330e-0c9e-4422-b655-a1429fbde618_600x.jpg?v=1616579742 600w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/IMG_5104_-_fix_0dc7330e-0c9e-4422-b655-a1429fbde618_900x.jpg?v=1616579742 900w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/IMG_5104_-_fix_0dc7330e-0c9e-4422-b655-a1429fbde618_1200x.jpg?v=1616579742 1200w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/IMG_5104_-_fix_0dc7330e-0c9e-4422-b655-a1429fbde618_1500x.jpg?v=1616579742 1500w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/IMG_5104_-_fix_0dc7330e-0c9e-4422-b655-a1429fbde618_1800x.jpg?v=1616579742 1800w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/IMG_5104_-_fix_0dc7330e-0c9e-4422-b655-a1429fbde618_2100x.jpg?v=1616579742 2100w">
+                <img class="img-slide2" src="./images/2 ly.jpg">
                 <div class="text-slide">
                     <span>It's time for tea!</span>
                 </div>
             </div>
             <div class="slide">
-                <img class="img-slide3" src="//cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_01_Bankstown_150x.jpg?v=1616572240" data-sizes="auto" data-aspectratio="1.5" style="" alt="THE ALLEY GOODS" data-srcset="//cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_01_Bankstown_150x.jpg?v=1616572240 150w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_01_Bankstown_300x.jpg?v=1616572240 300w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_01_Bankstown_600x.jpg?v=1616572240 600w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_01_Bankstown_900x.jpg?v=1616572240 900w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_01_Bankstown_1200x.jpg?v=1616572240 1200w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_01_Bankstown_1500x.jpg?v=1616572240 1500w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_01_Bankstown_1800x.jpg?v=1616572240 1800w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_01_Bankstown_2100x.jpg?v=1616572240 2100w" sizes="1310px" srcset="//cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_01_Bankstown_150x.jpg?v=1616572240 150w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_01_Bankstown_300x.jpg?v=1616572240 300w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_01_Bankstown_600x.jpg?v=1616572240 600w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_01_Bankstown_900x.jpg?v=1616572240 900w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_01_Bankstown_1200x.jpg?v=1616572240 1200w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_01_Bankstown_1500x.jpg?v=1616572240 1500w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_01_Bankstown_1800x.jpg?v=1616572240 1800w, //cdn.shopify.com/s/files/1/0446/9371/7158/files/AUSN_01_Bankstown_2100x.jpg?v=1616572240 2100w">
+                <img class="img-slide3" src="./images/nhà.jpg">
                 <div class="text-slide">
                     <span>It's time for tea!</span>
                 </div>
@@ -104,12 +208,13 @@
 
     </div>
 
+    <div class="tester--mag"></div>
     <div id="content3">
         <div class="MAG grid wide">
-           <div class="title--mag col l-12"> <h1 class="title_text--mag ">MAG.</h1></div>
-            <div class="big_box--mag row">
-                <div class="box--mag col l-4">
-                   <a href=""> <img src="./images/VOL.12-cover-01_1200x.jpg" alt=""></a>
+           <div class="title--mag col c-12 l-12"> <h1 class="title_text--mag ">MAG.</h1></div>
+            <div class="big_box--mag row ">
+                <div class="box--mag col c-12 l-4 ">
+                   <a href=""> <img class="img_box--mag" src="./images/VOL.12-cover-01_1200x.jpg" alt=""></a>
                     <div class="text_box--mag">
                         <p class="date_text-box">December 10, 2021</p>
                         <p class="title_text-box"><a href="">Vol.13 – Let’s pink up！
@@ -121,8 +226,8 @@
                         轉轉奶茶杯及環遊世界魔法毯的美好，滿足耶誕過節的濃濃氛圍！Let’s pink up！</p>
                     </div>
                 </div>
-                <div class="box--mag col l-4">
-                    <a href=""><img src="./images/VOL.12-cover_1200x.jpg" alt=""></a>
+                <div class="box--mag col c-12 l-4 ">
+                    <a href=""><img class="img_box--mag" src="./images/VOL.12-cover_1200x.jpg" alt=""></a>
                     <div class="text_box--mag">
                         <p class="date_text-box">October 07, 2021</p>
                         <p class="title_text-box"><a href="">Vol.12 – 人物專訪(下) THE ALLEY全球執行長-邱茂庭Ting</a></p>
@@ -134,8 +239,8 @@
                         「生活美學」，生活裡的小細節無不是美。</p>
                     </div>
                 </div>
-                <div class="box--mag col l-4">
-                   <a href=""><img src="./images/VOL.11-cover-01_1200x.jpg" alt=""></a>
+                <div class="box--mag col c-12 l-4 ">
+                   <a href=""><img  class="img_box--mag" src="./images/VOL.11-cover-01_1200x.jpg" alt=""></a>
                     <div class="text_box--mag">
                         <p class="date_text-box">October 04, 2021</p>
                         <p class="title_text-box"><a href="">Vol.11 – 人物專訪(上) THE ALLEY全球執行長-邱茂庭Ting</a></p>
@@ -147,6 +252,105 @@
             </div>
         </div>
     </div>
+    <!-- =============================Content 3 -- Mobile -->
+
+<!-- Swiper -->
+<div id="content3--mobile">
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="box--mag col c-12 l-4 ">
+            <a href=""> <img class="img_box--mag" src="./images/VOL.12-cover-01_1200x.jpg" alt=""></a>
+             <div class="text_box--mag">
+                 <p class="date_text-box">December 10, 2021</p>
+                 <p class="title_text-box"><a href="">Vol.13 – Let’s pink up！
+                 THE ALLEY粉紅聖誕樂園</a></p>
+                 <p class="text-box--mag">從視覺上打造粉紅樂園王國，
+                 絕對能夠激起你內心隱藏的少女心，小巧可愛的遊樂園不追求刺激感，
+                 強調的是一個夢幻氛圍，今年聖誕節不論是隻身過還是一群人一起過，
+                 來一趟鹿角巷THE ALLEY粉紅聖誕樂園，體驗運勢摩天輪、草莓滑水道、
+                 轉轉奶茶杯及環遊世界魔法毯的美好，滿足耶誕過節的濃濃氛圍！Let’s pink up！</p>
+             </div>
+         </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="box--mag col c-12 l-4 ">
+            <a href=""><img class="img_box--mag" src="./images/VOL.12-cover_1200x.jpg" alt=""></a>
+            <div class="text_box--mag">
+                <p class="date_text-box">October 07, 2021</p>
+                <p class="title_text-box"><a href="">Vol.12 – 人物專訪(下) THE ALLEY全球執行長-邱茂庭Ting</a></p>
+                <p class="text-box--mag">新冠肺炎COVID-19出現前，有一項投資找上門，正是一線韓劇
+                「THE KING：永遠的君主」的金編劇，看準「THE ALLEY鹿角巷」的場地和飲料特色，
+                特別提議嘗試合作；由於韓國的民族性很強，很少會認同國外品牌，這也讓邱茂庭果斷出手，
+                果不其然，將鹿角巷完全融入劇情，與劇中角色生活息息相關，因「THE KING：永遠的君主」上映，
+                帶動周邊商品透過線上通路，將隨手杯、茶包、罐裝飲品進入消費者生活中，真正落實所謂鹿角巷的
+                「生活美學」，生活裡的小細節無不是美。</p>
+            </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="box--mag col c-12 l-4 ">
+            <a href=""><img  class="img_box--mag" src="./images/VOL.11-cover-01_1200x.jpg" alt=""></a>
+             <div class="text_box--mag">
+                 <p class="date_text-box">October 04, 2021</p>
+                 <p class="title_text-box"><a href="">Vol.11 – 人物專訪(上) THE ALLEY全球執行長-邱茂庭Ting</a></p>
+                 <p class="text-box--mag">專訪身為全球超過400家 THE ALLEY 鹿角巷的執行長兼品牌創辦人-邱茂庭TING，
+                     將創業X興趣結合，喜歡喝奶茶加上商業設計的專業背景，僅花了不到10年的時間，
+                     就打造全球超過400家的「鹿角巷THE ALLEY」飲品美學王國。</p>
+             </div>
+         </div>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div>
+
+
+<div class="bottom--footer ">
+    <div class="subscribe ">
+    <div class="ft--subscribe ">
+        <div class="text_subscribe ">Join our Mailing List</div>
+        <div class="input_subscribe ">
+            <input type="email" class="input_email--subscribe"><span><i class="fas fa-chevron-right" id="arrow--send"></i></span>
+        </div>
+    </div>
+    </div>
+
+<div class="content--footer">
+    <div class="footer ">
+        <div class="box--footer">
+            <h2>Contact us</h2>
+            <span>MON.-FRI. 9am-12pm / 1pm-6pm</span>
+            <span>Ec.service@the-alley.world</span>
+            <a id="feedback" href="">Feedback</a>
+        </div>
+        <div class="box--footer">
+            <h2>FAQS</h2>
+            <a href="">Privacy Policy</a>
+            <a href="">About Us</a>
+            <a href="">Terms of Service</a>
+        </div>
+        <div class="box--footer">
+            <h2>Newsletter</h2>
+            <input type="text" placeholder="email@example.com" >
+            <span id="btn--subscribe">Subscribe</span>
+        </div>
+    </div>
+</div>
+<div class="final--footer">
+<div class="content-final--footer">
+    <span class="text-final--footer">© 2021, THE ALLEY GOODS </span>
+    <div class="show-money--footer">
+        <div class="option-money--footer" data-optionFt="">
+            <a href="">EUR €</a>
+            <a href="">JPY ¥</a>
+            <a href="">USD $</a>
+        </div>
+        <span class="text-show--footer">USD $</span>
+    </div>
+</div>
+</div>
+</div>
 
 
 
