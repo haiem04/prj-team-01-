@@ -164,6 +164,26 @@ body{
 .bgColor--menu{
     background-color: #fff;
 }
+#language-us {
+    background-color: rgba(128, 128, 128,0.2);
+}
+#money-us{
+    background-color: rgba(128, 128, 128,0.2);
+}
+#language-zh:hover{
+    background-color: rgba(128, 128, 128,0.2);
+}
+#money-jp:hover{
+    background-color: rgba(128, 128, 128,0.2);
+}
+#money-euro:hover{
+    background-color: rgba(128, 128, 128,0.2);
+}
+
+
+
+
+
 /*=====================Menu Mobile on Pc===================*/
 .navbar--mobile{
     display: none;
@@ -277,6 +297,13 @@ body{
     padding: 10px 0 10px 25px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     padding-left: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+#check--icon{
+    margin-right: 45px;
+    display: block;
+    color: #000;
 }
 .link_menu--mobile, .language_menu--mobile{
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -809,6 +836,21 @@ video{
     padding: 6px 15px 6px 15px;
     text-decoration: none;
 }
+
+.link-option--money--us{
+    background-color: rgba(128, 128, 128,0.2);
+}
+.link-option--money--euro:hover{
+    background-color: rgba(128, 128, 128,0.2);
+}
+.link-option--money--jp:hover{
+    background-color: rgba(128, 128, 128,0.2);
+}
+
+
+
+
+
 /*---------------------------------------------------Mobile--------------------------------------------------------*/
 @media  screen and (max-width : 739px) {
     /*Menu*/
@@ -926,9 +968,147 @@ video{
     width: 80%;
     padding-left: 0;
 }
+#check--icon{
+    margin-right: 45px;
+    display: block;
+    color: #000;
+}
+
+}
+
+/*-----------------------------------------------------Small Tablet------------------------------------------------------------*/
+@media only screen and (min-width: 481px) and (max-width: 767px)  {
+    /*Menu*/
+    #menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .inline{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar--mobile{
+    display: block;
+    width: 100px;
+    font-size: 23px;
+}
+.content_1--menu{
+    display: none;
+} 
+.content_2--menu > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_black--menu{
+    width: 90%;
+}
+.logo_white--menu{
+    width: 90%;
+}
+.text-slide{
+    font-size: 120%;
+    margin-left: 8%;
+}
+.text-slide-first {
+    margin-right: 14%;
+    font-size: 120%;
+}
+.arrow{
+    height: 75px;
+    width: 100%;
+}
+
+.content_3--menu{
+    width: auto;   
+}
+ .content_3--menu > ul >ul{
+    justify-content: space-evenly;
+    width: 100px;
+    font-size: 18px;
+} 
+.multi-language{
+    display: none;
+}
+.multi-money{
+    display: none;
+}
+#user--menu{
+    display: none;
+}
+
+/*content 2 */
+.title1_text--content2{
+    font-size: 35px;
+}
+.title2_text--content2{
+    font-size: 16px ;
+}
+
+
+
+/*search*/
+.search--mobile, .ShowSearchBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+.login--mobile{
+    display: none;
+}
+
+
+/* content 3 */
+#content3 {
+    display: none;
+    
+}
+
+
+/*content 3 -- mobile */
+#content3--mobile{
+    width:100%;
+    display: block;
+}
+
+
+/*foooter*/
+.text_subscribe{
+    font-size: 27px;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.box--footer{
+    width: 45%;
+    margin-left: 20px;
+}
+.box--footer > input{
+    width: 80%;
+    padding-left: 0;
+}
+.content-final--footer{
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    width: 30%;
+}
+#check--icon{
+    margin-right: 45px;
+    display: block;
+    color: #000;
+}
 
 
 }
+
+
+
 
 /*---------------------------------------------------Tabler--------------------------------------------------------*/
 @media screen and (min-width : 740px) and (max-width : 1024px) {
