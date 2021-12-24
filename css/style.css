@@ -198,8 +198,8 @@ html{
   text-align: center;
 }
 .ly{
-    margin-top: 5%;
-    width: 90%;
+   
+    width: 50%;
 }
 .tea1{
     margin-bottom: 3%;
@@ -816,7 +816,7 @@ z-index: 2;
 
 
 .menu-con{
-  font-family: Helvetica, Arial, sans-serif;
+ 
      background-color: #1f1f1f;  
      padding: 30px 60px;
      position: relative;
