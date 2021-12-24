@@ -437,8 +437,44 @@
         },
       });
 
+      //==================box chat 
 
+      var boxChat = document.querySelector('.box_chat'),
+            iconBoxChat = document.querySelector('.icon--boxchat'),
+            iconChat = document.querySelector('#icon--chat'),
+            iconCloseChat = document.querySelector('#icon-close--chat');
 
+            boxChat.classList.add('first-load--boxchat')
+            iconCloseChat.classList.add('first--iconchat')
+            iconBoxChat.addEventListener('click' , () => {
+            iconCloseChat.classList.remove('first--iconchat')
+            boxChat.classList.remove('first-load--boxchat')
+                if ( boxChat.getAttribute('data-Show--boxchat') === ''){
+                    boxChat.classList.remove('not-active--boxchat')
+                    boxChat.classList.add('active--boxchat')
+                    boxChat.setAttribute('data-Show--boxchat' , 'show')
+                }
+                else {
+                    boxChat.classList.remove('active--boxchat')
+                  boxChat.classList.add('not-active--boxchat')
+                  boxChat.setAttribute('data-Show--boxchat' , '')
+                }
+                
+                if ( iconChat.getAttribute('data-Show--boxchat') === 'show' &&
+                 iconCloseChat.getAttribute('data-Show--boxchat') === '' ){
+                    iconChat.classList.add('hide--iconChat')
+                    iconChat.setAttribute('data-Show--boxchat' , '')
+                    iconCloseChat.setAttribute('data-Show--boxchat' , 'show')
+                    iconCloseChat.classList.add('show--iconChat')
+                }
+                else {
+                    iconChat.classList.remove('hide--iconChat')
+                    iconChat.setAttribute('data-Show--boxchat' , 'show')
+                    iconCloseChat.classList.add('hide--iconChat')
+                    iconCloseChat.classList.remove('show--iconChat')
+                    iconCloseChat.setAttribute('data-Show--boxchat' , '')
+                }
+            })
 
 
 
