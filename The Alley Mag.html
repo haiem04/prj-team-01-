@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+      />
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/style The Alley Mag.css">
+    <script src="./javascript/JS The Alley Mag.js"></script>
+    <title>THE ALLEY GOODS</title>
+</head>
+<body>
+    <div id="menu">
+        <div class=" grid wide inline">
+            <div class="navbar--mobile">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="content_1--menu">
+                <span><a class="link--menu" href="">Home</a></span>
+                <span><a  class="link--menu"href="">MAG.</a></span>
+                <span><a class="link--menu" href="">Collections.</a></span>
+            </div>
+            <div class="content_2--menu">
+                <a href=""><img class="logo_white--menu" src="./images/LOGO_whitex.png"></a>
+                <a href=""><img class="logo_black--menu" src="./images/LOGO__black.png"></a>
+            </div>
+            <div class="content_3--menu">
+                <ul>
+                <li>
+                    <div class="multi-language">
+                    <div class="language--menu">
+                        <span id="show-option_language--menu">English </span>
+                     <i id="arrow-down" class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="option_language--menu"  data-show="">
+                    <span id="language-us">English</span>
+                    <span id="language-zh">繁體中文</span>
+                    </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="multi-money">
+                        <div class="money--menu">
+                            <span id="show-option_money--menu">USD $ </span>
+                         <i id="arrow-down" class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="option_money--menu " data-show="">
+                        <span id="money-euro">EUR €</span>
+                        <span id="money-jp">JPY ¥</span>
+                        <span id="money-us">USD $</span>
+                        </div>
+                    </div>
+                </li>
+                <ul>
+                <li><i class="fas fa-search" id="search--menu"></i></li>
+                <li><i class="fas fa-user" id="user--menu"></i></li>
+                <li><i class="fas fa-shopping-cart" id="shopping--menu"></i> <span id="number-shopping">0</span></li>
+                </ul>
+            </ul>
+            </div>
+        </div>
+    </div>
+    
+<!-- ========Menu Mobile -->
+    <div class="menu--mobile">
+        <div class="content_menu--mobile">
+            <div class="header_menu--mobile">
+            <div class="logo--mobile">
+                <img src="./images/LOGO__black.png" alt="">
+            </div>
+            <div class="btn--close">
+                <img class="img_btn--close" 
+                src="./images/close-menumobile.png" alt="">
+            </div>
+            </div>
+
+            <div class="main_menu--mobile">
+                <a  class="link_menu--mobile"  href="">Home</a>
+                <a  class="link_menu--mobile"  href="">MAG.</a>
+                <a  class="link_menu--mobile"  href="">Collections.</a>
+                <span class="language_menu--mobile"   href="#">Language</span>
+                <div class="box_language--mobile" data-show--mobile="">
+                <a class="link-language--mobile" href="">English <span>
+                     <i id="check--icon"  class="fas fa-check"></i></span></a>
+                <a class="link-language--mobile" href="">繁體中文</a>
+                </div>
+                <span  class="money_menu--mobile"  href="#">Currency</span>
+                <div class="box_money--mobile" data-show--mobile="">
+                    <a class="link-money--mobile" href="">EUR € </a>
+                    <a class="link-money--mobile" href="">JPY ¥</a>
+                    <a class="link-money--mobile" href="">USD $</a>
+                    </div>
+                <h3>ACCOUNT</h3>
+                <a class="link--bottom1" href="">Log in</a>
+                <a class="link--bottom2" href="">Create account</a>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
+
+<!-- ===============Search -->
+<div class="search--mobile">
+    <div class="content-search">
+    <div class="header-search">
+        <img class="btnclose--search" src="./images/close-menumobile.png" alt="">
+    </div>
+    <div class="search-input">
+        <span><i class="fas fa-search" id="icon-search--mobile"></i> </span>
+        <input class="search-input--fill" type="text"
+         placeholder="Search The Alley Goods" autocomplete="off" 
+         spellcheck="false">
+    </div>
+</div>
+</div>
+    <div class="overlay-1"></div>
+
+<!-- =========================Shopping -->
+<div class="shopping--mobile">
+    <div class="content-shop">
+        <div class="header-shop">
+            <div style="width: 80px;"></div>
+        <div class="check--shop"><p>Your shopping cart is empty</p></div>
+        <div  style="width: 80px; text-align: right;">
+            <img class="btnclose--shop"
+             src="./images/close-menumobile.png" alt=""></div>
+    </div>
+</div>
+</div>
+    <div class="overlay-1"></div>
+
+<!-- =================================Login -->
+
+<div class="login--mobile">
+    <div class="content-login">
+        <div class="header-login">
+            <div class="title--login">
+                <h1>Login</h1>
+            </div>
+        <div  style="width: 80px; text-align: right;">
+            <img class="btnclose--login"
+             src="./images/close-menumobile.png" alt="">
+        </div>
+    </div>
+
+    <div class="main-login--mobile">
+        <form action="#">
+            <input class="input-fill--login"  type="email" placeholder="Email"
+            autocomplete="off" spellcheck="false">
+            <input class="input-fill--login"  type="password" placeholder="Password"
+            autocomplete="off" spellcheck="false">
+            <input class="input--signin" type="submit" value="Sign in">
+            <a class="option--login" href="#">Create account</a>
+            <a class="option--login" href="#">Forgot password</a> 
+
+        </form>
+    </div>
+</div>
+</div>
+
+
+    
+
+
+<div class="bottom--footer ">
+    <div class="subscribe ">
+    <div class="ft--subscribe ">
+        <div class="text_subscribe ">Join our Mailing List</div>
+        <div class="input_subscribe ">
+            <input type="email" class="input_email--subscribe"><span><i class="fas fa-chevron-right" id="arrow--send"></i></span>
+        </div>
+    </div>
+    </div>
+
+<div class="content--footer">
+    <div class="footer ">
+        <div class="box--footer">
+            <h2>Contact us</h2>
+            <span>MON.-FRI. 9am-12pm / 1pm-6pm</span>
+            <span>Ec.service@the-alley.world</span>
+            <a id="feedback" href="">Feedback</a>
+        </div>
+        <div class="box--footer">
+            <h2>FAQS</h2>
+            <a href="">Privacy Policy</a>
+            <a href="">About Us</a>
+            <a href="">Terms of Service</a>
+        </div>
+        <div class="box--footer">
+            <h2>Newsletter</h2>
+            <input type="text" placeholder="email@example.com" >
+            <span id="btn--subscribe">Subscribe</span>
+        </div>
+    </div>
+</div>
+<div class="final--footer">
+<div class="content-final--footer">
+    <span class="text-final--footer">© 2021, THE ALLEY GOODS </span>
+    <div class="show-money--footer">
+        <div class="option-money--footer" data-optionFt="">
+            <a class="link-option--money--euro" href="">EUR €</a>
+            <a class="link-option--money--jp" href="">JPY ¥</a>
+            <a class="link-option--money--us" href="">USD $</a>
+        </div>
+        <span class="text-show--footer">USD $</span>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="communicate">
+<!-- color -1 #3b444f -->
+<!-- color 1.5 background: rgba(32, 42, 54, 0.1); -->
+<div class="box_chat" data-Show--boxchat="">
+    <div class="header--boxchat">
+        <h2 class="title--boxchat">the alley goods</h2>
+        <span> <img class="hi-hand" src="./images/icons8-waving-hand-emoji-48.png" alt="">
+            Hello! Let us know if you have a specific question,
+             or give an idea of what you're looking for. We're happy to make recommendations.</span>
+        <div class="box-input--chat">
+            <input type="text" placeholder="Message us" autocomplete="off" spellcheck="false">
+            <img src="./images/icons8-sent-48 (1).png" alt="">
+        </div>
+     </div>
+     <div class="body--boxchat">
+        <h4 class="request--1"> Can I get an update on my order status ?</>
+     </div>
+</div>
+<div class="icon--boxchat">
+<!-- color 2 #202a36 -->
+<i class="fas fa-comment" id="icon--chat" data-Show--boxchat="show"></i>
+<i class="fas fa-times" id="icon-close--chat" data-Show--boxchat=""></i>
+</div>
+</div>
+
+</body>
+</html>
