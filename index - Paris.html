@@ -49,7 +49,8 @@
 
 
 <input type="checkbox" hidden  class="nav_input" id="menu_input">
-        <div id="menu">
+          
+<div id="menu">
             <div class="menu_in">
                 
                 <div class="inline">
@@ -78,24 +79,31 @@
                    <!-- menu - PC -->    
                    
                    <!-- menu mobile -->
-                <div class="xoay">
+                <div class="menu-in--moblie">
+                <div class="xoay" data-Xoay="not">
                     <label for="menu_input" class="navbar_mobile">
                         <img src="images/3gach.svg" alt="" class="iconmenu">
                         <img src="images/close.svg" alt="" class="close">
                     </label>  
-
                 </div>
+                <div class="menu--mobile">
+                    <nav class="nav_mobile1" data-Show--menu="">
+                        <ul class="navmenu_mobile" > 
+                            <a class="link" href="#idea">À PROPOS</a>
+                            <a class="link" href="#about">AQUALITÉ</a>
+                            <a class="link" href="#quality">MENU</a>
+                            <a class="link" href="#menu--bottom">BOUTIQUE</a>
+                            <a class="link" href="#content5">CONTACT</a>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="overlay" data-Show--menu=""></div> 
             </div>
-        </div>
-        <nav class="nav_mobile1">
-            <ul class="navmenu_mobile"> 
-                <li><a class="link" href="#idea">IDEA | 概念分享</a></li>
-                <li><a class="link" href="#about">ABOUT | 關於我們</a></li>
-                <li><a class="link" href="#quality">QUALITY | 品質標準</a></li>
-                <li><a class="link" href="#menu--bottom">MENU | 飲品選擇</a></li>
-                <li><a class="link" href="#content5">STORE | 店鋪門市</a></li>
-            </ul>
-        </nav>
+            </div>
+
+    </div>
+        
+
     <div id="main">
         <!-- content 1 -->
     <div class="a1">
@@ -106,8 +114,8 @@
     </div>
         <!-- content 2 -->
 
+        <div class="tester"></div>
         <div class="content_2">
-                    <div class="tester"></div>
                     <div id="about">
                     <div class="border_content_2">
                 <div class="text_content_2">
@@ -138,6 +146,16 @@
                     </p>
                     <p>The Alley arrive enfin à Paris !</p>
                     </div>
+                    <div class="text_content_2 TextC2--mobile" >
+                        <p>The Alley souhaite créer la saveur unique
+                             pour tous les deer fans, et rendre chacune de vos expériences
+                              inoubliables. Avec cette idée, "The Alley" est né. It’s time for Tea!
+                               Profitez de nos boissons à base de thé avec des amis ou des collègues
+                                après une longue journée de travail, et partagez ces histoires avec vos
+                                 proches à la fin de la journée. Nous espérons que votre bonne humeur
+                                  vient avec chaque gorgée de boissons The Alley. The Alley arrive enfin
+                                   à Paris !</p>
+                    </div>
                 </div>
             </div>
                     <div class="bottom_content_2">
@@ -152,20 +170,20 @@
     
     </div>
 <!-- content 3 -->
+<div class="tester2"></div>
 <div id="quality">
-    <div class="tester2"></div>
     <div class="content3  ">
         <div class="box-content3  no-gutters">
 
                                 <!-- box1 -->
                                 <div class="content_3_box1  no-gutters">
-                                    <div class="img_content_3 col l-6 ">
+                                    <div class="img_content_3 col l-6  c-12">
                                         <img class="quality1" src="images/quality-img_sugar.jmg.png">
                                         <div  class="border_box1">
                                     <p >Sirop de sucre fraîchement préparé</p>
                                         </div>
                                     </div>
-                                <div class="text_box_C3 text-box-mobile1  col l-6 ">
+                                <div class="text_box_C3 text-box-mobile1  col l-6  c-12">
                                 <p class="text_box_content3 text-box1">
                                     Notre sirop de canne à sucre d’origine naturelle est 
                                     fraîchement préparé chaque jour. Cette douceur est délicate mais jamais écrasante</p>
@@ -175,13 +193,13 @@
 
                              <!-- box2 -->
              <div class="content_3_box2  no-gutters">
-                <div class="img_content_3 col l-6">
+                <div class="img_content_3 col l-6 c-12">
                     <img class="quality2" src="images/quality-img_deerioca.jpg">
                     <div  class="border_box2">
                 <p  style="width: 70%;">Préparation de tapioca et sucre brun </p>
                     </div>
                 </div>
-            <div class="text_box_C3 text-box-mobile2 col l-6">
+            <div class="text_box_C3 text-box-mobile2 col l-6 c-12">
             <p class="text_box_content3 text-box2 ">
                 Notre procédé unique de mélange de sucre brun 
                 et de perles crée une meilleure texture du tapioca. 
@@ -193,13 +211,13 @@
                  <!-- box3 -->
                  <div class="content_3_box3  no-gutters">
                      
-                     <div class="img_content_3_tea col l-6">
+                     <div class="img_content_3_tea col l-6 c-12">
                          <img class="quality3" src="images/quality-img_tealeaves.jpg">
                          <div  class="border_box3">
                      <p style="width: 70%;" >Feuilles de thé soigneusement sélectionnées</p>
                          </div>
                      </div>
-                    <div class="text_box_C3 text-box-mobile3 col l-6">
+                    <div class="text_box_C3 text-box-mobile3 col l-6 c-12">
                     <p class="text_box_content3 text-box3">
                         La sélection par la cueillette à la main des feuilles de thé et le 
                         rôtissage avec d'autres ingrédients donnent à chaque tasse de thé 
@@ -312,7 +330,7 @@
                                         </dd>
                                     </dl>
                 
-                                    <dl>
+                                    <dl class="last-dd">
                                         <div class="item-menu1">
                                         <dt class="img-box">
                                             <img src="./images/icon-recom-paris.svg" alt="">
@@ -363,7 +381,7 @@
                                         </dd>
                                     </dl>
                 
-                                    <dl>
+                                    <dl class="last-dd">
                                         <div class="item-menu1">
                                         <dt class="img-box">
                                             <img src="./images/icon-recom-paris.svg" alt="">
@@ -421,7 +439,7 @@
                                         </dd>
                                     </dl>
                 
-                                    <dl>
+                                    <dl class="last-dd">
                                         <div class="item-menu1">
                                         <dt class="img-box">
                                         </dt>
@@ -491,7 +509,7 @@
                                         </dd>
                                     </dl>
                 
-                                    <dl>
+                                    <dl class="last-dd">
                                         <div class="item-menu1">
                                         <dt class="img-box">
                                         </dt>
@@ -647,7 +665,7 @@
                                         </dd>
                                     </dl>
 
-                                    <dl>
+                                    <dl class="last-dd">
                                         <div class="item-menu1">
                                         <dt class="img-box">
                                             <img src="./images/icon-recom-paris.svg" alt="">
@@ -765,7 +783,7 @@
                                         </dd>
                                     </dl>
 
-                                    <dl>
+                                    <dl class="last-dd">
                                         <div class="item-menu1">
                                         <dt class="img-box">
                                         </dt>
@@ -841,7 +859,7 @@
                                         </dd>
                                     </dl>
                 
-                                    <dl>
+                                    <dl class="last-dd">
                                         <div class="item-menu1">
                                         <dt></dt>
                                         <dd>
@@ -932,7 +950,7 @@
                                         </dd>
                                     </dl>
 
-                                    <dl>
+                                    <dl class="last-dd">
                                         <div class="item-menu1">
                                         <dt></dt>
                                         <dd>
@@ -1020,7 +1038,7 @@
                                         </dd>
                                     </dl>
 
-                                    <dl>
+                                    <dl class="last-dd">
                                         <div class="item-menu1">
                                         <dt></dt>
                                         <dd>
@@ -1051,17 +1069,17 @@
                         <img class="img-ex" src="./images/icon-recom-paris.svg" alt="">
                         <span class="ex"> =  Recommandé　 </span>
                     </div>
-                    <div class="note--menu">
+                    <div class="note--menu note-menu--mobile">
                         <div class="note1--menu">
                             <img src="./images/icon-iced-Paris.svg" alt="">
                             <span class="ex"> =  Froid </span>
                         </div>
-                        <div class="note2--menu">
+                        <div class="note2--menu note2-mobile">
                             <img src="./images/icon-hot-Paris.svg" alt="">
                             <span class="ex"> =  Chaud, Boisson chaude uniquement en taille M　 </span>
                         </div>
                     </div>
-                    <div class="note--menu">
+                    <div class="note--menu  note-menu--mobile">
                         <div class="note1--menu">
                             <img class="img-ex" src="./images/icon-fa-paris.svg" alt="">
                             <span class="ex"> =  Glace fixe </span>
@@ -1071,7 +1089,7 @@
                             <span class="ex"> =  Sucre fixe　 </span>
                         </div>
                     </div>
-                    <div class="note--menu">
+                    <div class="note--menu  note-menu--mobile">
                         <div class="note1--menu">
                             <img class="img-ex" src="./images/icon-M.svg" alt="">
                             <span class="ex"> =  Taille Medium</span>
