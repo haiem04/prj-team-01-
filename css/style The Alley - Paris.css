@@ -302,6 +302,9 @@ html{
   position: absolute;
   margin-top: -200px;
 }
+.tester2--tablet{
+  display: none;
+}
  #about{
     width: 80%;
  }
@@ -1238,7 +1241,9 @@ color: #d5d5d5;
 /* ----------------------------------------------Tablet ------------------------------------------------------*/
 
 @media screen and ( min-width:740px ) and ( max-width: 1024px ) {
-
+  .tester2--tablet{
+    display: block;
+  }
   .inline {
     width: 90%;
   }
@@ -1269,7 +1274,7 @@ color: #d5d5d5;
   width: 100%;
 }
 #about{
-  width: 80%%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1389,7 +1394,9 @@ z-index: 2;
 
 /*------------------more Responsice------------------*/
 @media screen and (min-width: 1024px) and (max-width: 1310px) {
-  
+  .tester2--tablet{
+    display: block;
+  }
   .content_2{
     display: flex;
     flex-direction: column;
@@ -1397,7 +1404,7 @@ z-index: 2;
     width: 100%;
   }
   #about{
-    width: 80%%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;

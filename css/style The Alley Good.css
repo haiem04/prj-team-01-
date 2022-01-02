@@ -1006,7 +1006,7 @@ video{
         align-items: center;
     }
     .inline{
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -1047,8 +1047,8 @@ video{
     width: auto;   
 }
  .content_3--menu > ul >ul{
-    justify-content: space-evenly;
-    width: 100px;
+    justify-content: space-between;
+    width: 70px;
     font-size: 18px;
 } 
 .multi-language{
@@ -1121,6 +1121,38 @@ video{
 }
 
 }
+
+/*------------------------small mobile ------------------------*/
+@media screen and (max-width: 411px) {
+    .communicate{
+        right: 5px;
+        
+    }
+    .box_chat{
+        right: 0;
+    }
+    
+    .body--boxchat{
+        height: 290px;
+    }
+}
+@media screen and (max-width: 330px){
+    .communicate{
+        right: 0;
+        margin-left: 5px;
+    }
+    .box_chat{
+        right: 0;
+        
+        width: 100vw;
+    }
+    .body--boxchat{
+        height: 200px;
+    }
+}
+
+
+
 
 /*-----------------------------------------------------Small Tablet------------------------------------------------------------*/
 @media only screen and (min-width: 481px) and (max-width: 767px)  {

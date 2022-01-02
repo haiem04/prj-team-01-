@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded' , function(){
-    
     // var checkedW;
     // var checkwidth = () =>{
     //     checkedW = setInterval(function(){
@@ -108,10 +107,13 @@ document.addEventListener('DOMContentLoaded' , function(){
     var navbar = nav.offsetTop ;
 
      //*************var của hiệu ứng scroll ********* */
+     var windowScreen = screen.availWidth
+     console.log('wsf' , windowScreen)
      var tester = document.querySelector('.tester') ,
      testerOffset = tester.offsetTop;
-     var testerOffset2 = testerOffset + 30 ;
-     var testerOffset3 = testerOffset2 + 200 ;
+    
+
+
      console.log('testerOffsett2' , testerOffset2)
      var picAbout = document.querySelector('.pic_content_2') ,
             borderC2 = document.querySelector('.border_content_2'),
@@ -125,9 +127,9 @@ document.addEventListener('DOMContentLoaded' , function(){
     var tester2 = document.querySelector('.tester2'),
           testerOffset_Q = tester2.offsetTop ;
           console.log('Q',  testerOffset_Q)
-    var testerOffset1_Q = testerOffset_Q - 570 ; 
-    var testerOffset2_Q = testerOffset1_Q + 450 ; 
-    var testerOffset3_Q = testerOffset2_Q + 300 //450 ; 
+
+
+
     var text1BoxC3 = document.querySelector('.text-box1'),
           text2BoxC3 = document.querySelector('.text-box2'),
           text3BoxC3 = document.querySelector('.text-box3'),
@@ -138,16 +140,71 @@ document.addEventListener('DOMContentLoaded' , function(){
     var test3 = document.querySelector('.tester3'),
           testerOffset_AUR = test3.offsetTop;
           console.log('ẢUR' , testerOffset_AUR) 
-    var testerOffset1_AUR = testerOffset_AUR - 500;
-    var testerOffset2_AUR = testerOffset_AUR - 290;
-    var testerOffset3_AUR = testerOffset_AUR - 190;
+          // content 5 --- menu con
+          var logoMenuCon = document.querySelector('.logo-menu-con'); 
+          var MenuInfor = document.querySelector('.menu--infor');
+          var menuBottom = document.querySelector('#menu--bottom') ;
+          var effect1 = document.querySelector('.effect1') ;
+          var effect2 = document.querySelector('.effect2') ;
+        var Content5 = document.querySelector('#content5');
+        
 
     console.log('testerOffset2_AUR' , testerOffset2_AUR);
     var AuroraA = document.querySelector('.auroraA'),
           AuroraB = document.querySelector('.img-aurora--B'),
           AuroraC = document.querySelector('.auroraC');
 
-         
+         if ( windowScreen > 1320){
+            
+            var testerOffset2 = testerOffset + 30 ;
+            var testerOffset3 = testerOffset2 + 200 ;
+           var testerOffset1_Q = testerOffset_Q - 570 ; 
+           var testerOffset2_Q = testerOffset1_Q + 450 ; 
+           var testerOffset3_Q = testerOffset2_Q + 300 //450 ; 
+           var testerOffset1_AUR = testerOffset_AUR - 500;
+           var testerOffset2_AUR = testerOffset_AUR - 290;
+           var testerOffset3_AUR = testerOffset_AUR - 190;
+         }
+         else if ( windowScreen >1024 && windowScreen < 1319 ){
+            var testerOffset1 = testerOffset + 0;
+            var testerOffset2 = testerOffset + 30 ;
+            var testerOffset3 = testerOffset2 + 200 ;
+           var testerOffset1_Q = testerOffset_Q - 570 ; 
+           var testerOffset2_Q = testerOffset1_Q + 450 ; 
+           var testerOffset3_Q = testerOffset2_Q + 300 //450 ; 
+           var testerOffset1_AUR = testerOffset_AUR - 500;
+           var testerOffset2_AUR = testerOffset_AUR - 290;
+           var testerOffset3_AUR = testerOffset_AUR - 190;
+         }
+         else if ( windowScreen <= 1024 && windowScreen >= 740){
+            var testerOffset1 = testerOffset + 100;
+            var testerOffset1_5 = testerOffset + 900;
+            var testerOffset2 = testerOffset + 30 ;
+            var testerOffset3 = testerOffset2 + 200 ;
+           var testerOffset1_Q = testerOffset_Q - 390 ; 
+           var testerOffset2_Q = testerOffset1_Q + 450 ; 
+           var testerOffset2_5Q = testerOffset1_Q + 470 ; 
+           var testerOffset3_Q = testerOffset2_Q + 300 //450 ; 
+           var testerOffset3_5Q = testerOffset3_Q + 430 ; 
+
+           var testerOffset1_AUR = testerOffset_AUR - 300;
+           var testerOffset2_AUR = testerOffset_AUR - 170;
+           var testerOffset3_AUR = testerOffset_AUR  +50;
+
+
+        var menuConOffset = menuBottom.offsetTop - 480;
+        var menuConOffset1 = menuBottom.offsetTop + 1600;
+        var c5Offset = Content5.offsetTop;
+        var c5Offset_1 =c5Offset - 500 ;
+        var c5Offset_2 =c5Offset - 380 ;
+         }
+
+
+
+        
+          
+        // c5Offset_3 =c5Offset + 330 ;
+
 
     window.onscroll = function() {
         var window_pos = document.documentElement.scrollTop;
@@ -171,159 +228,487 @@ document.addEventListener('DOMContentLoaded' , function(){
 
 
     //=================JS hieu ung 
-         
-         
-         if (testerOffset <= window_pos){
-             picAbout.classList.add('Move')
-             borderC2.classList.add('Move')
-             picAbout.classList.remove('Re--move')
-             borderC2.classList.remove('Re--move')
-         }
-         else{
-            picAbout.classList.remove('Move')
-            borderC2.classList.remove('Move')
-            picAbout.classList.add('Re--move')
-            borderC2.classList.add('Re--move')
-         }
-         if ( testerOffset2 <= window_pos){
-            titleC2.classList.add('Move')
-            text1C2.classList.add('Move')
-            titleC2.classList.remove('Re--move')
-            text1C2.classList.remove('Re--move')
-         }
-         else{
-            titleC2.classList.remove('Move')
-            text1C2.classList.remove('Move')      
-            titleC2.classList.add('Re--move')
-            text1C2.classList.add('Re--move')      
-         }
-        if  ( testerOffset3 <= window_pos){
-            smallText1.classList.add('Move')
-            smallText2.classList.add('Move')
-            smallText1.classList.remove('Re--move')
-            smallText2.classList.remove('Re--move')
+         var windowScreen = screen.availWidth
+         console.log('ws' , windowScreen)
+         if ( windowScreen > 1320 ){
 
-        }
-        else{
-            smallText1.classList.remove('Move')
-            smallText2.classList.remove('Move') 
-            smallText1.classList.add('Re--move')
-            smallText2.classList.add('Re--move')      
+            if (testerOffset <= window_pos){
+                picAbout.classList.add('Move')
+                borderC2.classList.add('Move')
+                picAbout.classList.remove('Re--move')
+                borderC2.classList.remove('Re--move')
+            }
+            else{
+               picAbout.classList.remove('Move')
+               borderC2.classList.remove('Move')
+               picAbout.classList.add('Re--move')
+               borderC2.classList.add('Re--move')
+            }
+            if ( testerOffset2 <= window_pos){
+               titleC2.classList.add('Move')
+               text1C2.classList.add('Move')
+               titleC2.classList.remove('Re--move')
+               text1C2.classList.remove('Re--move')
+            }
+            else{
+               titleC2.classList.remove('Move')
+               text1C2.classList.remove('Move')      
+               titleC2.classList.add('Re--move')
+               text1C2.classList.add('Re--move')      
+            }
+           if  ( testerOffset3 <= window_pos){
+               smallText1.classList.add('Move')
+               smallText2.classList.add('Move')
+               smallText1.classList.remove('Re--move')
+               smallText2.classList.remove('Re--move')
+   
+           }
+           else{
+               smallText1.classList.remove('Move')
+               smallText2.classList.remove('Move') 
+               smallText1.classList.add('Re--move')
+               smallText2.classList.add('Re--move')      
+   
+           }
+           //----------quality
+           if ( testerOffset1_Q <= window_pos ){
+               text1BoxC3.classList.add('Move')
+               text1BoxC3.classList.remove('Re--move')
+               borderBox1.classList.add('Show')
+               borderBox1.classList.remove('Re--show')
+           }
+           else{
+               text1BoxC3.classList.remove('Move')
+               text1BoxC3.classList.add('Re--move')
+               borderBox1.classList.remove('Show')
+               borderBox1.classList.add('Re--show')
+           }
+           if ( testerOffset2_Q <= window_pos ){
+               borderBox2.classList.add('Show')
+               borderBox2.classList.remove('Re--show')
+               text2BoxC3.classList.add('Move')
+               text2BoxC3.classList.remove('Re--move')
+           }
+           else{
+               borderBox2.classList.remove('Show')
+               borderBox2.classList.add('Re--show')
+               text2BoxC3.classList.remove('Move')
+               text2BoxC3.classList.add('Re--move')
+           }
+           if ( testerOffset3_Q <= window_pos ){
+               text3BoxC3.classList.add('Move')
+               text3BoxC3.classList.remove('Re--move')
+               borderBox3.classList.add('Show')
+               borderBox3.classList.remove('Re--show')
+           }
+           else{
+               borderBox3.classList.remove('Show')
+               borderBox3.classList.add('Re--show')
+               text3BoxC3.classList.remove('Move')
+               text3BoxC3.classList.add('Re--move')
+           }
+           //----------Aurora
+           if ( testerOffset1_AUR <= window_pos ){
+               AuroraA.classList.add('Move--1')
+               AuroraA.classList.remove('Re--move--1')
+           }
+           else{
+               AuroraA.classList.remove('Move--1')
+               AuroraA.classList.add('Re--move--1')
+           }
+           if ( testerOffset2_AUR  <= window_pos ){
+               AuroraB.classList.add('Show--1')
+               AuroraB.classList.remove('Re--show--1')
+           }
+           else{
+               AuroraB.classList.add('Show--1')
+               AuroraB.classList.add('Re--show--1')
+           }
+           if ( testerOffset3_AUR <= window_pos ){
+               AuroraC.classList.add('Move--1')  
+               AuroraC.classList.remove('Re--move--1')
+   
+           }
+           else{
+               AuroraC.classList.remove('Move--1')  
+               AuroraC.classList.add('Re--move--1')
+           }
+         // -------------------Menu con   | | Content 5
+           var logoMenuCon = document.querySelector('.logo-menu-con'); 
+           var MenuInfor = document.querySelector('.menu--infor');
+           var menuBottom = document.querySelector('#menu--bottom') ,
+               menuConOffset = menuBottom.offsetTop - 480;
+               menuConOffset1 = menuBottom.offsetTop + 1600;
+   
+           var effect1 = document.querySelector('.effect1') ;
+           var effect2 = document.querySelector('.effect2') ;
+               
+           var Content5 = document.querySelector('#content5'),
+                 c5Offset = Content5.offsetTop,
+               c5Offset_1 =c5Offset - 500 ;
+               c5Offset_2 =c5Offset - 380 ;
+               // c5Offset_3 =c5Offset + 330 ;
+           if (menuConOffset <= window_pos){
+               logoMenuCon.classList.add('Show--1')
+               logoMenuCon.classList.remove('Re--show--1')
+   
+           }
+           else {
+               logoMenuCon.classList.remove('Show--1')
+               logoMenuCon.classList.add('Re--show--1')
+           }
+           if ( menuConOffset1 <= window_pos){
+               MenuInfor.classList.remove('Re--show--1')
+               MenuInfor.classList.add('Move--1')
+           }
+           else {
+               MenuInfor.classList.remove('Move--1')
+               MenuInfor.classList.add('Re--show--1')
+   
+           }
+           if ( c5Offset_1<= window_pos ){
+               effect1.classList.add('Show--1')
+               effect1.classList.remove('Re--show--1')
+           }
+           else{
+               effect1.classList.remove('Show--1')
+               effect1.classList.add('Re--show--1')
+           }
+           if ( c5Offset_2 <= window_pos){
+               effect2.classList.add('Show--1')
+               effect2.classList.remove('Re--show--1')
+           }
+           else{
+               effect2.classList.remove('Show--1')
+               effect2.classList.add('Re--show--1')
+           }
+   
+         }
+         else if ( windowScreen < 1319 && windowScreen >1024 ){
+            if (testerOffset1 <= window_pos){
+                picAbout.classList.add('Move')
+                borderC2.classList.add('Move')
+                picAbout.classList.remove('Re--move')
+                borderC2.classList.remove('Re--move')
+            }
+            else{
+               picAbout.classList.remove('Move')
+               borderC2.classList.remove('Move')
+               picAbout.classList.add('Re--move')
+               borderC2.classList.add('Re--move')
+            }
+            if ( testerOffset2 <= window_pos){
+               titleC2.classList.add('Move')
+               text1C2.classList.add('Move')
+               titleC2.classList.remove('Re--move')
+               text1C2.classList.remove('Re--move')
+            }
+            else{
+               titleC2.classList.remove('Move')
+               text1C2.classList.remove('Move')      
+               titleC2.classList.add('Re--move')
+               text1C2.classList.add('Re--move')      
+            }
+           if  ( testerOffset3 <= window_pos){
+               smallText1.classList.add('Move')
+               smallText2.classList.add('Move')
+               smallText1.classList.remove('Re--move')
+               smallText2.classList.remove('Re--move')
+   
+           }
+           else{
+               smallText1.classList.remove('Move')
+               smallText2.classList.remove('Move') 
+               smallText1.classList.add('Re--move')
+               smallText2.classList.add('Re--move')      
+   
+           }
+           //----------quality
+           if ( testerOffset1_Q <= window_pos ){
+               text1BoxC3.classList.add('Move')
+               text1BoxC3.classList.remove('Re--move')
+               borderBox1.classList.add('Show')
+               borderBox1.classList.remove('Re--show')
+           }
+           else{
+               text1BoxC3.classList.remove('Move')
+               text1BoxC3.classList.add('Re--move')
+               borderBox1.classList.remove('Show')
+               borderBox1.classList.add('Re--show')
+           }
+           if ( testerOffset2_Q <= window_pos ){
+               borderBox2.classList.add('Show')
+               borderBox2.classList.remove('Re--show')
+               text2BoxC3.classList.add('Move')
+               text2BoxC3.classList.remove('Re--move')
+           }
+           else{
+               borderBox2.classList.remove('Show')
+               borderBox2.classList.add('Re--show')
+               text2BoxC3.classList.remove('Move')
+               text2BoxC3.classList.add('Re--move')
+           }
+           if ( testerOffset3_Q <= window_pos ){
+               text3BoxC3.classList.add('Move')
+               text3BoxC3.classList.remove('Re--move')
+               borderBox3.classList.add('Show')
+               borderBox3.classList.remove('Re--show')
+           }
+           else{
+               borderBox3.classList.remove('Show')
+               borderBox3.classList.add('Re--show')
+               text3BoxC3.classList.remove('Move')
+               text3BoxC3.classList.add('Re--move')
+           }
+           //----------Aurora
+           if ( testerOffset1_AUR <= window_pos ){
+               AuroraA.classList.add('Move--1')
+               AuroraA.classList.remove('Re--move--1')
+           }
+           else{
+               AuroraA.classList.remove('Move--1')
+               AuroraA.classList.add('Re--move--1')
+           }
+           if ( testerOffset2_AUR  <= window_pos ){
+               AuroraB.classList.add('Show--1')
+               AuroraB.classList.remove('Re--show--1')
+           }
+           else{
+               AuroraB.classList.add('Show--1')
+               AuroraB.classList.add('Re--show--1')
+           }
+           if ( testerOffset3_AUR <= window_pos ){
+               AuroraC.classList.add('Move--1')  
+               AuroraC.classList.remove('Re--move--1')
+   
+           }
+           else{
+               AuroraC.classList.remove('Move--1')  
+               AuroraC.classList.add('Re--move--1')
+           }
+         // -------------------Menu con   | | Content 5
+           var logoMenuCon = document.querySelector('.logo-menu-con'); 
+           var MenuInfor = document.querySelector('.menu--infor');
+           var menuBottom = document.querySelector('#menu--bottom') ,
+               menuConOffset = menuBottom.offsetTop - 480;
+               menuConOffset1 = menuBottom.offsetTop + 1600;
+   
+           var effect1 = document.querySelector('.effect1') ;
+           var effect2 = document.querySelector('.effect2') ;
+               
+           var Content5 = document.querySelector('#content5'),
+                 c5Offset = Content5.offsetTop,
+               c5Offset_1 =c5Offset - 500 ;
+               c5Offset_2 =c5Offset - 380 ;
+               // c5Offset_3 =c5Offset + 330 ;
+           if (menuConOffset <= window_pos){
+               logoMenuCon.classList.add('Show--1')
+               logoMenuCon.classList.remove('Re--show--1')
+   
+           }
+           else {
+               logoMenuCon.classList.remove('Show--1')
+               logoMenuCon.classList.add('Re--show--1')
+           }
+           if ( menuConOffset1 <= window_pos){
+               MenuInfor.classList.remove('Re--show--1')
+               MenuInfor.classList.add('Move--1')
+           }
+           else {
+               MenuInfor.classList.remove('Move--1')
+               MenuInfor.classList.add('Re--show--1')
+   
+           }
+           if ( c5Offset_1<= window_pos ){
+               effect1.classList.add('Show--1')
+               effect1.classList.remove('Re--show--1')
+           }
+           else{
+               effect1.classList.remove('Show--1')
+               effect1.classList.add('Re--show--1')
+           }
+           if ( c5Offset_2 <= window_pos){
+               effect2.classList.add('Show--1')
+               effect2.classList.remove('Re--show--1')
+           }
+           else{
+               effect2.classList.remove('Show--1')
+               effect2.classList.add('Re--show--1')
+           }
 
-        }
-        //----------quality
-        if ( testerOffset1_Q <= window_pos ){
-            text1BoxC3.classList.add('Move')
-            text1BoxC3.classList.remove('Re--move')
-            borderBox1.classList.add('Show')
-            borderBox1.classList.remove('Re--show')
-        }
-        else{
-            text1BoxC3.classList.remove('Move')
-            text1BoxC3.classList.add('Re--move')
-            borderBox1.classList.remove('Show')
-            borderBox1.classList.add('Re--show')
-        }
-        if ( testerOffset2_Q <= window_pos ){
-            borderBox2.classList.add('Show')
-            borderBox2.classList.remove('Re--show')
+
+
+
+
+         }
+         else if ( windowScreen <= 1024 && windowScreen >= 740 ){
+            if (testerOffset1 <= window_pos){
+                borderC2.classList.add('Move')
+                borderC2.classList.remove('Re--move')
+            }
+            else{
+               borderC2.classList.remove('Move')
+               borderC2.classList.add('Re--move')
+            }
+            if  ( testerOffset1_5 < window_pos ){
+                picAbout.classList.add('Move')
+                picAbout.classList.remove('Re--move')
+            }
+            else{
+                picAbout.classList.remove('Move')
+                picAbout.classList.add('Re--move') 
+            }
+            if ( testerOffset2 <= window_pos){
+               titleC2.classList.add('Move')
+               text1C2.classList.add('Move')
+               titleC2.classList.remove('Re--move')
+               text1C2.classList.remove('Re--move')
+            }
+            else{
+               titleC2.classList.remove('Move')
+               text1C2.classList.remove('Move')      
+               titleC2.classList.add('Re--move')
+               text1C2.classList.add('Re--move')      
+            }
+           if  ( testerOffset3 <= window_pos){
+               smallText1.classList.add('Move')
+               smallText2.classList.add('Move')
+               smallText1.classList.remove('Re--move')
+               smallText2.classList.remove('Re--move')
+   
+           }
+           else{
+               smallText1.classList.remove('Move')
+               smallText2.classList.remove('Move') 
+               smallText1.classList.add('Re--move')
+               smallText2.classList.add('Re--move')      
+   
+           }
+           //----------quality
+           if ( testerOffset1_Q <= window_pos ){
+               text1BoxC3.classList.add('Move')
+               text1BoxC3.classList.remove('Re--move')
+               borderBox1.classList.add('Show')
+               borderBox1.classList.remove('Re--show')
+           }
+           else{
+               text1BoxC3.classList.remove('Move')
+               text1BoxC3.classList.add('Re--move')
+               borderBox1.classList.remove('Show')
+               borderBox1.classList.add('Re--show')
+           }
+           if ( testerOffset2_Q <= window_pos ){
+               borderBox2.classList.add('Show')
+               borderBox2.classList.remove('Re--show')
+           }
+           else{
+               borderBox2.classList.remove('Show')
+               borderBox2.classList.add('Re--show')
+               text2BoxC3.classList.remove('Move')
+               text2BoxC3.classList.add('Re--move')
+           }
+           if( testerOffset2_5Q <= window_pos ){
             text2BoxC3.classList.add('Move')
             text2BoxC3.classList.remove('Re--move')
-        }
-        else{
-            borderBox2.classList.remove('Show')
-            borderBox2.classList.add('Re--show')
+           }
+           else{
             text2BoxC3.classList.remove('Move')
             text2BoxC3.classList.add('Re--move')
-        }
-        if ( testerOffset3_Q <= window_pos ){
+
+           }
+           if ( testerOffset3_Q <= window_pos ){
+               borderBox3.classList.add('Show')
+               borderBox3.classList.remove('Re--show')
+           }
+           else{
+               borderBox3.classList.remove('Show')
+               borderBox3.classList.add('Re--show')
+           }
+           if ( testerOffset3_5Q <= window_pos  ){
             text3BoxC3.classList.add('Move')
             text3BoxC3.classList.remove('Re--move')
-            borderBox3.classList.add('Show')
-            borderBox3.classList.remove('Re--show')
-        }
-        else{
-            borderBox3.classList.remove('Show')
-            borderBox3.classList.add('Re--show')
+           }
+           else{
             text3BoxC3.classList.remove('Move')
             text3BoxC3.classList.add('Re--move')
-        }
-        //----------Aurora
-        if ( testerOffset1_AUR <= window_pos ){
-            AuroraA.classList.add('Move--1')
-            AuroraA.classList.remove('Re--move--1')
-        }
-        else{
-            AuroraA.classList.remove('Move--1')
-            AuroraA.classList.add('Re--move--1')
-        }
-        if ( testerOffset2_AUR  <= window_pos ){
-            AuroraB.classList.add('Show--1')
-            AuroraB.classList.remove('Re--show--1')
-        }
-        else{
-            AuroraB.classList.add('Show--1')
-            AuroraB.classList.add('Re--show--1')
-        }
-        if ( testerOffset3_AUR <= window_pos ){
-            AuroraC.classList.add('Move--1')  
-            AuroraC.classList.remove('Re--move--1')
+           }
+           //----------Aurora
+           if ( testerOffset1_AUR <= window_pos ){
+               AuroraA.classList.add('Move--1')
+               AuroraA.classList.remove('Re--move--1')
+           }
+           else{
+               AuroraA.classList.remove('Move--1')
+               AuroraA.classList.add('Re--move--1')
+           }
+           if ( testerOffset2_AUR  <= window_pos ){
+               AuroraB.classList.add('Show--1')
+               AuroraB.classList.remove('Re--show--1')
+           }
+           else{
+               AuroraB.classList.add('Show--1')
+               AuroraB.classList.add('Re--show--1')
+           }
+           if ( testerOffset3_AUR <= window_pos ){
+               AuroraC.classList.add('Move--1')  
+               AuroraC.classList.remove('Re--move--1')
+   
+           }
+           else{
+               AuroraC.classList.remove('Move--1')  
+               AuroraC.classList.add('Re--move--1')
+           }
+         // -------------------Menu con   | | Content 5
+           
+           if (menuConOffset <= window_pos){
+               logoMenuCon.classList.add('Show--1')
+               logoMenuCon.classList.remove('Re--show--1')
+   
+           }
+           else {
+               logoMenuCon.classList.remove('Show--1')
+               logoMenuCon.classList.add('Re--show--1')
+           }
+           if ( menuConOffset1 <= window_pos){
+               MenuInfor.classList.remove('Re--show--1')
+               MenuInfor.classList.add('Move--1')
+           }
+           else {
+               MenuInfor.classList.remove('Move--1')
+               MenuInfor.classList.add('Re--show--1')
+   
+           }
+           if ( c5Offset_1<= window_pos ){
+               effect1.classList.add('Show--1')
+               effect1.classList.remove('Re--show--1')
+           }
+           else{
+               effect1.classList.remove('Show--1')
+               effect1.classList.add('Re--show--1')
+           }
+           if ( c5Offset_2 <= window_pos){
+               effect2.classList.add('Show--1')
+               effect2.classList.remove('Re--show--1')
+           }
+           else{
+               effect2.classList.remove('Show--1')
+               effect2.classList.add('Re--show--1')
+           }
 
-        }
-        else{
-            AuroraC.classList.remove('Move--1')  
-            AuroraC.classList.add('Re--move--1')
-        }
-      // -------------------Menu con   | | Content 5
-        var logoMenuCon = document.querySelector('.logo-menu-con'); 
-        var MenuInfor = document.querySelector('.menu--infor');
-        var menuBottom = document.querySelector('#menu--bottom') ,
-            menuConOffset = menuBottom.offsetTop - 480;
-            menuConOffset1 = menuBottom.offsetTop + 1600;
 
-        var effect1 = document.querySelector('.effect1') ;
-        var effect2 = document.querySelector('.effect2') ;
-            
-        var Content5 = document.querySelector('#content5'),
-              c5Offset = Content5.offsetTop,
-            c5Offset_1 =c5Offset - 500 ;
-            c5Offset_2 =c5Offset - 380 ;
-            // c5Offset_3 =c5Offset + 330 ;
-        if (menuConOffset <= window_pos){
-            logoMenuCon.classList.add('Show--1')
-            logoMenuCon.classList.remove('Re--show--1')
 
-        }
-        else {
-            logoMenuCon.classList.remove('Show--1')
-            logoMenuCon.classList.add('Re--show--1')
-        }
-        if ( menuConOffset1 <= window_pos){
-            MenuInfor.classList.remove('Re--show--1')
-            MenuInfor.classList.add('Move--1')
-        }
-        else {
-            MenuInfor.classList.remove('Move--1')
-            MenuInfor.classList.add('Re--show--1')
 
-        }
-        if ( c5Offset_1<= window_pos ){
-            effect1.classList.add('Show--1')
-            effect1.classList.remove('Re--show--1')
-        }
-        else{
-            effect1.classList.remove('Show--1')
-            effect1.classList.add('Re--show--1')
-        }
-        if ( c5Offset_2 <= window_pos){
-            effect2.classList.add('Show--1')
-            effect2.classList.remove('Re--show--1')
-        }
-        else{
-            effect2.classList.remove('Show--1')
-            effect2.classList.add('Re--show--1')
-        }
 
+         }
+
+
+
+
+
+
+
+
+       
 
 
 
