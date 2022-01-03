@@ -524,7 +524,12 @@ color: #d5d5d5;
 
 
 /* ----------------------------------------------Mobile ------------------------------------------------------*/
-
+@media screen and (max-width: 500px) {
+  .border_box1,.border_box2,.border_box3{
+    width: 175px;
+    height: 175px;
+  }
+}
 
 @media screen and (max-width: 739px)
 {
